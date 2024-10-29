@@ -24,7 +24,7 @@ header {
 .nav_bar {
   display: flex;
   min-width: 500px;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .nav_bar a {
   font-size: 14px;
@@ -34,7 +34,7 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   padding: 28px 0;
-  border-bottom: 5px solid #ffffff;
+  border-bottom: 5px solid transparent;
 }
 .nav_bar a:hover {
   border-bottom: 4px solid #f54e77;
@@ -379,4 +379,8 @@ a.action_container:link {
   width: 14px;
   height: 14px;
   cursor: pointer;
+}
+
+.spinner {
+  margin: 100px 0px
 }

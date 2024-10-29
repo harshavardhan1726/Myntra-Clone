@@ -1,9 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const { getStoredItems, storeItems } = require('./data/items');
 
 const app = express();
+
+app.use(cors());
 
 app.use(bodyParser.json());
 
@@ -16,7 +19,7 @@ app.use((req, res, next) => {
 
 app.get('/items', async (req, res) => {
   const storedItems = await getStoredItems();
-  // await new Promise((resolve, reject) => setTimeout(() => resolve(), 4000));
+  await new Promise((resolve, reject) => setTimeout(() => resolve(), 4000));
   res.json({ items: storedItems });
 });
 
