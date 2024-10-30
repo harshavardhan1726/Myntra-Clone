@@ -35,6 +35,7 @@ This is a Myntra clone project built with React and Redux. It simulates the func
 │       └── main.jsx                 # Main entry point for the frontend
 ├── .gitignore                       # Git ignore file
 └── README.md                        # Project README
+```
 
 
 ## Features
@@ -68,7 +69,8 @@ cd myntra-clone
     cd Backend
 
 npm install
-```
+
+````
     3. Install frontend dependencies:
     ```
     cd ../Frontend
@@ -90,3 +92,4 @@ npm start
 ### Redux Slices
 - ```bagSlice.js```: Manages the state of the shopping bag, including actions like ```addToBag``` and ```removeFromBag```.
 - ```fetchStatusSlice.js```: Handles the status of data fetching.
+````
