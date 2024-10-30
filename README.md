@@ -4,12 +4,12 @@ This is a Myntra clone project built with React and Redux. It simulates the func
 
 ## Project Structure
 
-```plaintext
+```
 .
 ├── Backend
 │   ├── data
 │   │   └── items.json               # JSON file containing items for sale
-│   ├── app.js                       # Express server configuration (if applicable)
+│   ├── app.js                       # Express server configuration 
 │   ├── package.json                 # Backend dependencies
 │   └── package-lock.json
 ├── Frontend
@@ -36,7 +36,7 @@ This is a Myntra clone project built with React and Redux. It simulates the func
 │       └── main.jsx                 # Main entry point for the frontend
 ├── .gitignore                       # Git ignore file
 └── README.md                        # Project README
-
+```
 
 ## Features
 
@@ -48,8 +48,8 @@ This is a Myntra clone project built with React and Redux. It simulates the func
 ## Technologies Used
 
 - **Frontend**: React, Redux Toolkit
-- **Backend**: Node.js, Express (assumed)
-- **Styling**: CSS (Bootstrap assumed from components' structure)
+- **Backend**: Node.js, Express
+- **Styling**: CSS ( Bootstrap )
 
 ## Getting Started
 
@@ -63,4 +63,35 @@ This is a Myntra clone project built with React and Redux. It simulates the func
    ```bash
    git clone https://github.com/your-username/myntra-clone.git
    cd myntra-clone
+   ```
 
+2. **Install backend dependencies**:
+   ```bash
+   cd Backend
+   npm install
+   ```
+
+3. **Install frontend dependencies**:
+   ```bash
+   cd ../Frontend
+   npm install
+   ```
+
+### Running the Project
+
+1. **Start the backend server**:
+   ```bash
+   cd Backend
+   npm start
+   ```
+
+2. **Start the frontend**:
+   ```bash
+   cd ../Frontend
+   npm start
+   ```
+
+### Redux Slices
+
+- `bagSlice.js`: Manages the state of the shopping bag, including actions like `addToBag` and `removeFromBag`.
+- `fetchStatusSlice.js`: Handles the status of data fetching.
